@@ -6,7 +6,10 @@ def calculator(number1, number2, operator):
     elif operator == "*":
         return float(number1) * float(number2)
     elif operator == "/":
-        return float(number1) / float(number2)
+        try:
+            return float(number1) / float(number2)
+        except ZeroDivisionError:
+            return "Can't divide by 0"
     elif operator == "**":
         return float(number1) ** float(number2)
     else:
