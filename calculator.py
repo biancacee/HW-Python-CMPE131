@@ -1,4 +1,4 @@
-def Calculator(number1, number2, operator):
+def calculator(number1, number2, operator):
     if operator == "+":
         return float(number1) + float(number2)
     elif operator == "-":
@@ -14,6 +14,6 @@ def Calculator(number1, number2, operator):
 
 def parse_input():
     number1,operator,number2 = input("Enter equation: ").split()
-    print(Calculator(number1,number2,operator))
+    print(calculator(number1,number2,operator))
 
 
