@@ -16,4 +16,4 @@ def parse_input():
     number1,operator,number2 = input("Enter equation: ").split()
     print(Calculator(number1,number2,operator))
 
-parse_input()
+
