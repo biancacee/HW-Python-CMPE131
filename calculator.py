@@ -5,9 +5,9 @@ def calculator(number1, number2, operator):
         return float(number1) - float(number2)
     elif operator == "*":
         return float(number1) * float(number2)
-    elif operator == "//":
+    elif operator == "/":
         try:
-            return float(number1) // float(number2)
+            return float(number1) / float(number2)
         except ZeroDivisionError:
             return False
     elif operator == "**":
