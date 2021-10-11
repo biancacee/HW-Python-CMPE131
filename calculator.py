@@ -9,7 +9,7 @@ def calculator(number1, number2, operator):
         try:
             return float(number1) / float(number2)
         except ZeroDivisionError:
-            return "Can't divide by 0"
+            return False
     elif operator == "**":
         return float(number1) ** float(number2)
     else:
