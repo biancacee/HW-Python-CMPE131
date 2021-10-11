@@ -5,9 +5,9 @@ def calculator(number1, number2, operator):
         return float(number1) - float(number2)
     elif operator == "*":
         return float(number1) * float(number2)
-    elif operator == "/":
+    elif operator == "//":
         try:
-            return float(number1) / float(number2)
+            return float(number1) // float(number2)
         except ZeroDivisionError:
             return False
     elif operator == "**":
@@ -19,4 +19,4 @@ def parse_input():
     number1,operator,number2 = input("Enter equation: ").split()
     print(calculator(number1,number2,operator))
 
-
+parse_input()
