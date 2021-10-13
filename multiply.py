@@ -1,7 +1,5 @@
-def multiply_list(list):
+def multiply_list(mylist):
     result = 1
-    for i in list:
+    for i in mylist:
         result = i*result
     return result
-
-
