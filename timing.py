@@ -8,3 +8,8 @@ def calculate_time(func):
         total_time= end_time-start_time
         print ("Total time ",total_time)
     return test_decorator
+def test_function():
+    time.sleep(2)
+
+final_runtime=calculate_time(test_function)
+final_runtime()
