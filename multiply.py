@@ -4,4 +4,3 @@ def multiply_list(mylist):
         result = int(i)* result
     return result
 
-print(multiply_list([1,2,3,7]))
