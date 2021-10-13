@@ -6,7 +6,7 @@ def calculate_time(test_function):
         test_function()
         end_time=time.time()
         total_time= end_time-start_time
-        print("Total time is ", total_time)
+        print("Total time {}".format(total_time))
     return wrapper
 
 def function_runtime():
