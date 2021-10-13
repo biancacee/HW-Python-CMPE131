@@ -10,6 +10,11 @@ def calculator(number1, number2, operator):
             return float(number1) / float(number2)
         except ZeroDivisionError:
             return False
+    elif operator == "//":
+        try:
+            return float(number1) // float(number2)
+        except ZeroDivisionError:
+            return False
     elif operator == "**":
         return float(number1) ** float(number2)
     else:
@@ -18,5 +23,3 @@ def calculator(number1, number2, operator):
 def parse_input():
     number1,operator,number2 = input("Enter equation: ").split()
     print(calculator(number1,number2,operator))
-
-
