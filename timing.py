@@ -1,6 +1,10 @@
 import time
 
 def calculate_time(func):
-    time_seconds = time.time()
-    print("Total time", time_seconds)
-calculate_time(time.sleep(2))
+    def test_decorator():
+        start_time= time.time()
+        test_function()
+        end_time=time.time()
+        total_time= end_time-start_time
+        print ("Total time ",total_time)
+    return test_decorator
