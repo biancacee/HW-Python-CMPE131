@@ -9,6 +9,7 @@ def calculate_time(func):
         print ("Total time ",total_time)
     return test_decorator
 def test_function():
+    time.sleep(0)
     time.sleep(1)
     time.sleep(2)
 
