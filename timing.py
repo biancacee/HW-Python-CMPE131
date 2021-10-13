@@ -9,4 +9,4 @@ def calculate_time(func):
 def test_function():
     time.sleep(2)
 
-time_funtion=calculate_time(test_function)
+calculate_time(test_function)
