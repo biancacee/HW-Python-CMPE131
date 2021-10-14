@@ -10,8 +10,4 @@ def calculate_time(test_function):
         print("Total time {}".format(total_time))
     return wrapper
 
-def function_runtime():
-    time.sleep(2)
 
-function_runtime=calculate_time(function_runtime)
-function_runtime()
